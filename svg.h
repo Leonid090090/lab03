@@ -21,4 +21,6 @@ opacity_factor (size_t bin, size_t max_count);
 void
 show_histogram_svg(const vector<size_t>& bins);
 
+double ind (const double bin_width);
+
 #endif // SVG_H_INCLUDED

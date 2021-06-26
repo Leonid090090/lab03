@@ -11,17 +11,18 @@
 1624701232 c:\users\w1thoutiq\desktop\lb3\hisogram.h
 	<vector>
 
-1624700492 source:c:\users\w1thoutiq\desktop\lb3\main.cpp
+1624701250 source:c:\users\w1thoutiq\desktop\lb3\main.cpp
 	<iostream>
 	<vector>
 	"hisogram.h"
+	"svg.h"
 
-1624700919 source:c:\users\w1thoutiq\desktop\lb3\svg.cpp
+1624712583 source:c:\users\w1thoutiq\desktop\lb3\svg.cpp
 	<iostream>
 	<vector>
 	"svg.h"
 
-1622389582 c:\users\w1thoutiq\desktop\lb3\svg.h
+1624713198 c:\users\w1thoutiq\desktop\lb3\svg.h
 	<vector>
 	<string>
 

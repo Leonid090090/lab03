@@ -3,6 +3,14 @@
 #include "svg.h"
 using namespace std;
 
+    const auto IMAGE_WIDTH = 400;
+    const auto IMAGE_HEIGHT = 300;
+    const auto TEXT_LEFT = 20;
+    const auto TEXT_BASELINE = 20;
+    const auto TEXT_WIDTH = 50;
+    const auto BIN_HEIGHT = 30;
+    const auto BLOCK_WIDTH = 10;
+    const auto MAX_COUNT = 34;
 
 void
 svg_begin(double width, double height)
@@ -46,21 +54,18 @@ opacity_factor (size_t bin, size_t max_count)
     return opacity;
 }
 
+double ind (const double bin_width)
+{
+    double xr;
+    xr = IMAGE_WIDTH - TEXT_WIDTH - bin_width;
+    return xr;
+}
+
 void
 show_histogram_svg(const vector<size_t>& bins)
 {
-    const auto IMAGE_WIDTH = 400;
-    const auto IMAGE_HEIGHT = 300;
-    const auto TEXT_LEFT = 20;
-    const auto TEXT_BASELINE = 20;
-    const auto TEXT_WIDTH = 50;
-    const auto BIN_HEIGHT = 30;
-    const auto BLOCK_WIDTH = 10;
-    const auto MAX_COUNT = 34;
-
     double top = 0;
     svg_begin(IMAGE_WIDTH, IMAGE_HEIGHT);
-    size_t count;
     size_t max_count = bins[0];
     for (size_t bin : bins)
     {
@@ -79,8 +84,9 @@ show_histogram_svg(const vector<size_t>& bins)
         {
             auto height = (size_t)(bin * scaling_factor);
             const double bin_width = BLOCK_WIDTH * height;
-            svg_text(TEXT_LEFT, top + TEXT_BASELINE, to_string(bin));
-            svg_rect(TEXT_WIDTH, top, bin_width, BIN_HEIGHT, "blue", "#ff2233");
+
+            svg_rect(ind(bin_width), top, bin_width, BIN_HEIGHT, "blue", "#ff2233");
+            svg_text(IMAGE_WIDTH - TEXT_LEFT, top + TEXT_BASELINE, to_string(bin));
             top += BIN_HEIGHT;
 
         }
@@ -93,8 +99,9 @@ show_histogram_svg(const vector<size_t>& bins)
         {
 
             const double bin_width = BLOCK_WIDTH * bin;
-            svg_text(TEXT_LEFT, top + TEXT_BASELINE, to_string(bin));
-            svg_rect(TEXT_WIDTH, top, bin_width, BIN_HEIGHT, "blue", "#aaffaa");
+
+            svg_rect(ind(bin_width), top, bin_width, BIN_HEIGHT, "blue", "#aaffaa");
+            svg_text(IMAGE_WIDTH - TEXT_LEFT, top + TEXT_BASELINE, to_string(bin));
             top += BIN_HEIGHT;
 
         }

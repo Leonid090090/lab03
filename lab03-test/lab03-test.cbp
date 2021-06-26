@@ -31,9 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="../histogram.cpp" />
-		<Unit filename="../histogram.h" />
-		<Unit filename="../test.cpp" />
+		<Unit filename="../hisogram.cpp" />
+		<Unit filename="../hisogram.h" />
+		<Unit filename=".gitignore" />
+		<Unit filename="test.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
