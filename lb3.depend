@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1621777484 source:c:\users\user\desktop\aaaa\lb3\main.cpp
+	<iostream>
+	<vector>
+
+1624699230 source:c:\users\w1thoutiq\desktop\lb3\hisogram.cpp
+	<vector>
+	<iostream>
+	"hisogram.h"
+
+1624699230 c:\users\w1thoutiq\desktop\lb3\hisogram.h
+	<vector>
+
+1624700492 source:c:\users\w1thoutiq\desktop\lb3\main.cpp
+	<iostream>
+	<vector>
+	"hisogram.h"
+
