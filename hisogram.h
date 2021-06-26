@@ -4,6 +4,9 @@
 
 using namespace std;
 
+vector<double>
+input_numbers(size_t count);
+
 void find_minmax(const vector<double> numbers, double& min, double& max);
 struct Input {
     vector<double> numbers;

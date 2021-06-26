@@ -5,6 +5,17 @@
 using namespace std;
 const size_t SCREEN_WIDTH = 80;
 const size_t MAX_ASTERISK = SCREEN_WIDTH - 4 - 1;
+vector<double>
+input_numbers(size_t count)
+{
+    vector<double> result(count);
+    for (size_t i = 0; i < count; i++)
+    {
+        cin >> result[i];
+    }
+    return result;
+}
+
 void find_minmax(const vector<double> numbers, double& min, double& max)
 {
     if (numbers.size() == 0) return;

@@ -3,16 +3,25 @@
 	<iostream>
 	<vector>
 
-1624699230 source:c:\users\w1thoutiq\desktop\lb3\hisogram.cpp
+1624701223 source:c:\users\w1thoutiq\desktop\lb3\hisogram.cpp
 	<vector>
 	<iostream>
 	"hisogram.h"
 
-1624699230 c:\users\w1thoutiq\desktop\lb3\hisogram.h
+1624701232 c:\users\w1thoutiq\desktop\lb3\hisogram.h
 	<vector>
 
 1624700492 source:c:\users\w1thoutiq\desktop\lb3\main.cpp
 	<iostream>
 	<vector>
 	"hisogram.h"
+
+1624700919 source:c:\users\w1thoutiq\desktop\lb3\svg.cpp
+	<iostream>
+	<vector>
+	"svg.h"
+
+1622389582 c:\users\w1thoutiq\desktop\lb3\svg.h
+	<vector>
+	<string>
 
