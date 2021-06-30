@@ -6,12 +6,12 @@ using namespace std;
 const size_t SCREEN_WIDTH = 80;
 const size_t MAX_ASTERISK = SCREEN_WIDTH - 4 - 1;
 vector<double>
-input_numbers(size_t count)
+input_numbers(istream& in, size_t count)
 {
     vector<double> result(count);
     for (size_t i = 0; i < count; i++)
     {
-        cin >> result[i];
+        in >> result[i];
     }
     return result;
 }
