@@ -11,11 +11,12 @@
 1625061740 c:\users\w1thoutiq\desktop\lb3\hisogram.h
 	<vector>
 
-1625061442 source:c:\users\w1thoutiq\desktop\lb3\main.cpp
+1625062441 source:c:\users\w1thoutiq\desktop\lb3\main.cpp
 	<iostream>
 	<vector>
 	"hisogram.h"
 	"svg.h"
+	<curl/curl.h>
 
 1624712583 source:c:\users\w1thoutiq\desktop\lb3\svg.cpp
 	<iostream>
@@ -25,4 +26,46 @@
 1624713198 c:\users\w1thoutiq\desktop\lb3\svg.h
 	<vector>
 	<string>
+
+1618168474 c:\users\w1thoutiq\desktop\lb3\curl\include\curl\curl.h
+	"curlver.h"
+	"system.h"
+	<stdio.h>
+	<limits.h>
+	<osreldate.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<support/SupportDefs.h>
+	"easy.h"
+	"multi.h"
+	"urlapi.h"
+	"options.h"
+	"typecheck-gcc.h"
+
+1618333046 c:\users\w1thoutiq\desktop\lb3\curl\include\curl\curlver.h
+
+1618165874 c:\users\w1thoutiq\desktop\lb3\curl\include\curl\system.h
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/poll.h>
+
+1618165874 c:\users\w1thoutiq\desktop\lb3\curl\include\curl\easy.h
+
+1618165874 c:\users\w1thoutiq\desktop\lb3\curl\include\curl\multi.h
+	"curl.h"
+
+1618165874 c:\users\w1thoutiq\desktop\lb3\curl\include\curl\urlapi.h
+	"curl.h"
+
+1618165874 c:\users\w1thoutiq\desktop\lb3\curl\include\curl\options.h
+
+1618167848 c:\users\w1thoutiq\desktop\lb3\curl\include\curl\typecheck-gcc.h
 
