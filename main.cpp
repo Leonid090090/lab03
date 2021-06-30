@@ -32,11 +32,18 @@ else {
 }
 
 int
-main()
+main(int argc, char* argv[])
 {
+    if (argc > 1)
+    {
+        cout << "argc = " << argc << '\n';
+        for (int i = 0; i < argc; i++)
+            cout << "argv[" << i << "] = " << argv[i] << '\n';
+    }
     curl_global_init(CURL_GLOBAL_ALL);
     const auto input = read_input(cin, true);
     const auto bins = make_histogram(input);
     show_histogram_svg(bins);
+
     return 0;
 }
