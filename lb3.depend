@@ -3,21 +3,7 @@
 	<iostream>
 	<vector>
 
-1625344515 source:c:\users\w1thoutiq\desktop\lb3\hisogram.cpp
-	<vector>
-	<iostream>
-	"hisogram.h"
-
-1625350018 c:\users\w1thoutiq\desktop\lb3\hisogram.h
-	<vector>
-
-1625350666 source:c:\users\w1thoutiq\desktop\lb3\main.cpp
-	<iostream>
-	<conio.h>
-	<math.h>
-	<vector>
-	"hisogram.h"
-	"svg.h"
+1625067993 D
 	<curl/curl.h>
 	<sstream>
 	<string>
@@ -26,10 +12,35 @@
 	<iomanip>
 	<ctime>
 
-1625344417 source:c:\users\w1thoutiq\desktop\lb3\svg.cpp
+1625344515 source:c:\users\w1thoutiq\desktop\lb3\hisogram.cpp
+	<vector>
+	<iostream>
+	"hisogram.h"
+
+1625068395 04
+	<vector>
+	<iostream>
+	"hisogram.h"
+	<iostream>
+	<conio.h>
+	<math.h>
+	<vector>
+	"hisogram.h"
+	"svg.h"
 	<iostream>
 	<vector>
 	"svg.h"
+	<windows.h>
+	<sstream>
+	<string>
+
+1625350018 c:\users\w1thoutiq\desktop\lb3\hisogram.h
+	<vector>
+
+1625067993 source:c:\users\w1thoutiq\desktop\lb3\main.cpp
+
+1625068395 source:c:\users\w1thoutiq\desktop\lb3\svg.cpp
+	<windows.h>
 
 1624713198 c:\users\w1thoutiq\desktop\lb3\svg.h
 	<vector>

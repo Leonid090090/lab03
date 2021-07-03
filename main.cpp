@@ -2,18 +2,26 @@
 #include <conio.h>
 #include <math.h>
 #include <vector>
+#include <iostream>
+#include <vector>
 #include "hisogram.h"
 #include "svg.h"
+
 #include <curl/curl.h>
-#include <sstream>
-#include <string>
-#include <windows.h>
+
 #include <locale.h>
 #include <iomanip>
 #include <ctime>
+
+#include <windows.h>
+#include <sstream>
+#include <string>
+
+
 using namespace std;
 
     Input read_input(istream& in, bool prompt, int argc, char* argv[], bool flag) {
+
 
     Input data;
     size_t number_count;
@@ -59,6 +67,14 @@ using namespace std;
 
     return data;
 }
+//=======
+//int
+//main()
+//{
+//    size_t number_count;
+//    cerr << "Enter number count: ";
+//    cin >> number_count;
+//>>>>>>> lab04
 
 size_t
 write_data(void* items, size_t item_size, size_t item_count, void* ctx)
@@ -76,6 +92,9 @@ Input
 download(const string& address, int  argc, char* argv[], bool flag)
 {
     stringstream buffer;
+//=======
+//    const auto bins = make_histogram(bin_count,numbers);
+//>>>>>>> lab04
 
             CURL *curl = curl_easy_init();
             if(curl)

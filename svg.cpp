@@ -1,6 +1,9 @@
 #include <iostream>
 #include <vector>
 #include "svg.h"
+#include <windows.h>
+#include <sstream>
+#include <string>
 using namespace std;
 
     const auto IMAGE_WIDTH = 400;
@@ -54,6 +57,32 @@ opacity_factor (size_t bin, size_t max_count)
     return opacity;
 }
 
+string
+make_info_text()
+{
+    stringstream buffer;
+    DWORD WINAPI GetVersion(void);
+
+    DWORD info = GetVersion();
+    DWORD mask = 0b00000000'00000000'11111111'11111111;
+    DWORD version = info & mask;;
+    DWORD platform = info >> 16;
+    DWORD maska = 0b00000000'11111111;
+    if ((info & 0x40000000) == 0)
+    {
+        DWORD version_major = version & maska;
+        DWORD version_minor = version >> 8;
+        DWORD build = platform;
+        buffer << "Windows v" << version_major << "." << version_minor << "(build " << build << ")\n";
+    }
+    DWORD size = MAX_COMPUTERNAME_LENGTH + 1;
+    char pc_n[MAX_COMPUTERNAME_LENGTH + 1];
+
+    GetComputerNameA(pc_n, &size);
+    buffer << "PC name: " << pc_n << '\n';
+    return buffer.str();
+}
+
 double ind (const double bin_width)
 {
     double xr;
@@ -90,6 +119,7 @@ show_histogram_svg(const vector<size_t>& bins)
             top += BIN_HEIGHT;
 
         }
+        svg_text(1, top + TEXT_BASELINE, make_info_text());
 
         svg_end();
     }
@@ -105,6 +135,7 @@ show_histogram_svg(const vector<size_t>& bins)
             top += BIN_HEIGHT;
 
         }
+        svg_text(1, top + TEXT_BASELINE, make_info_text());
         svg_end();
 
     }
